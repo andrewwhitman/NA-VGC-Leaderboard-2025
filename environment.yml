@@ -5,7 +5,7 @@ dependencies:
   - jupyterlab
   - matplotlib
   - numpy
-  - python=3.13
+  - python=3.10
   - pandas
   - voila
   - itables
