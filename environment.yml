@@ -1,6 +1,6 @@
 name: naic25
 channels:
-  - defaults
+  - conda-forge
 dependencies:
   - jupyterlab
   - matplotlib
