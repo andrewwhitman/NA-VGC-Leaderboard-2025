@@ -1,12 +1,16 @@
 name: naic25
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - jupyterlab
   - matplotlib
   - numpy
-  - python=3.10
+  - python=3.11
   - pandas
+  - pip
   - voila
   - itables
+  - pip:
+    - ploomber-cloud
 prefix: C:\Users\whitm\Anaconda3\envs\naic25
