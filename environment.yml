@@ -6,9 +6,10 @@ dependencies:
   - jupyterlab
   - matplotlib
   - numpy
-  - python=3.11
   - pandas
   - pip
+  - pyarrow
+  - python=3.11 
   - voila
   - itables
   - pip:
