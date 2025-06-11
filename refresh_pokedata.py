@@ -12,7 +12,10 @@ def extract_standings(standings_url):
     for v in data:
         record = ''
         for value in v['rounds'].values():
-            record += value['result']
+            try:
+                record += value['result']
+            except TypeError:
+                pass
             
         standings.append([v['placing'], v['name'][:-5].title(), v['record']['wins'], v['record']['losses'], v['drop'], record])
         
@@ -25,7 +28,7 @@ def extract_standings(standings_url):
 
 
 # tournament id
-url_num = 47
+url_num = 49
 
 # round prefix
 prefix = 'R1_begin' # 'R{x}_{begin/end}'
